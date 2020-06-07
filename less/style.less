@@ -1,0 +1,402 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, Tahoma, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+span,
+div,
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: #000;
+  list-style: none;
+  text-decoration: none;        
+  font-weight: normal;
+}
+
+.all-button {
+  outline: none;
+  border: 0;
+  border-radius: 40px;
+  padding: 10px 15px;
+
+  &:active {
+    transition: all 0.3s ease;
+    transform: scale(0.95);
+  }
+ }
+
+.image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.page {
+  .header {
+    .top-header {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 20px;
+      align-items: center;
+
+      .logo {
+        display: flex;
+        align-items: center;
+
+        img {
+          padding-right: 20px;
+          width: 80px;
+        }
+
+        .name-site {
+          color: #F13C6E;
+          font-weight: bold;
+          font-size: 36px;
+        }
+      }
+      
+      form {
+        .search-header {
+          background: #EFEFEF;
+          border-radius: 40px;
+          outline: none;
+          border: 1px solid silver;
+          padding: 10px;
+        }
+      }
+      
+      .contacts {
+        .number-phone {
+          font-weight: bold;
+          padding-right: 20px;
+          font-size: 16px;
+        }
+
+        .back-signal {
+          .all-button;
+          border: 1px solid #F13C6E;
+          background: transparent;
+        }
+      }
+    }
+ 
+    .down-header {
+      padding: 40px 0;
+
+      .menu {
+        display: flex;
+        justify-content: space-between;
+
+        li {
+          a {
+            font-size: 16px;
+            text-decoration: none;
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+
+  .ads-banner {
+    .image;
+    background-image: url(../img/Rectangle2.png);
+    padding: 200px 0;
+
+    .content-ads-banner {   
+      .title-ads-banner {
+        font-weight: bold;
+        font-size: 48px;
+        color: #fff;
+      }
+    
+      .text-ads-banner {
+        color: #fff;
+        line-height: 170%;
+        padding: 20px 0;
+      }
+    
+      .btn-ads-banner {
+        .all-button;
+        background: transparent;
+        color: #fff;
+        border: 1px solid #fff;
+      }
+
+    }
+  }
+
+  .special-deals {
+    background: #E5E5E5;
+
+    .content {
+      .title-special-deas {
+        font-weight: bold;
+        font-size: 24px;
+      }
+
+      .cards {
+        display: flex;
+        justify-content: space-between;
+        padding: 50px 0;
+      
+        .card {
+          background: #fff;
+          width: 20%;    
+          padding: 20px;
+
+          .image {
+            .image;
+            background-image: url(../img/Rectangle4.png);
+            width: 125px;
+            height: 166px;
+            margin-left: 25%;
+            text-align: center;
+          }
+        
+          .description {
+            text-align: center;
+            padding-top: 20px;
+
+            .text-card {
+              line-height: 20px;
+              padding-bottom: 20px;
+            }
+            
+            .price {
+              font-weight: 500;
+              font-size: 21px;
+              padding-bottom: 20px;
+            }
+            
+            .btn-card {
+              .all-button;
+              background: #F13C6E;
+              padding: 10px 35px;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .referal {
+    .overlay {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      
+      .bonus {
+        background: #F13C6E;
+        width: 40%;
+        display: flex;
+        padding: 10px;
+        justify-content: space-between;
+    
+        .info {
+          align-self: center;
+
+          .title-bonus {
+            font-weight: bold;
+            font-size: 18px;
+            color: #fff;
+          }
+
+          .text-bonus {
+            line-height: 20px;
+            color: #fff;
+          }
+
+          form {
+            .search-referal {
+              background: #EFEFEF;
+              border-radius: 40px;
+              outline: none;
+              margin-top: 20px;
+              border: 1px solid silver;
+              padding: 10px;
+            }
+          }
+        }
+        
+        .icon {
+          font-size: 180px;
+          color: #f680a0;
+        }
+      }
+    
+      .deliverer {
+        background: #F13C6E;
+        width: 40%;
+        display: flex;
+        padding: 10px;
+        justify-content: space-between;
+        align-items: center;
+
+        .info {
+          .title-deliverer {
+            font-weight: bold;
+            font-size: 18px;
+            color: #fff;
+          }
+
+          .text-deliverer {
+            line-height: 20px;
+            color: #fff;
+          }
+
+          .btn-deliverer {
+            .all-button;
+            margin-top: 20px;
+            border: 1px solid #fff;
+            color: #fff;
+            background: transparent;
+          }
+        }
+        
+        .icon {
+          font-size: 160px;
+          color: #f680a0;
+        }
+      }
+    }
+  }
+  
+
+  .brand {
+    margin: 50px 0;
+
+    .content {
+      display: flex;
+      background: #fff;
+      flex-wrap: wrap;
+
+      img {
+        width: 20%;
+        padding-right: 5%; 
+      }
+    }
+  }
+
+  
+  .footer {
+    background: #fff;
+
+    .content {
+      display: flex;
+      flex-direction: column;
+
+      .top-footer {
+        .overlay {
+          display: flex;
+          justify-content: space-between; 
+      
+          .trand {
+            .title {
+              font-weight: 500;
+              font-size: 16px;
+              
+              &:after {
+                content: "";
+                display: inline-block;
+                width: 100%;
+                height: 1px;
+                text-align: center;
+                background-color: #EFEFEF;
+              }
+            }
+
+            ul {
+              li {
+                padding: 10px 0;
+
+                a {
+                  font-size: 12px;
+                  text-decoration: none;
+                  color: #828282;
+                }
+              }
+            }
+          }
+        }
+ 
+        .down-top-footer {
+          .social-network {
+            width: 33%;
+            display: inline-block;
+
+            span {
+              color: #F13C6E;
+              font-size: 28px;
+              padding-right: 20px;
+            }
+          }
+          
+          .address {
+            font-size: 16px;
+            font-weight: bold;
+            width: 33%;
+            display: inline-block;
+          }
+
+          .information {
+            display: inline-block;
+            float: right;
+
+            .phone {
+              font-weight: bold;
+              padding-right: 20px;
+              font-size: 16px;
+            }
+
+            .btn-back-signal {
+              .all-button;
+              border: 1px solid #F13C6E;
+              background: transparent;
+            }
+          }
+
+          &:before {
+            content: "";
+            display: inline-block;
+            width: 100%;
+            height: 1px;
+            text-align: center;
+            margin-bottom: 10px;  
+            background-color: #828282;
+          }
+        } 
+      }
+    
+      .down-footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 0px;
+        background: #EFEFEF;
+
+        span {
+          font-size: 12px;
+          line-height: 14px;
+          color: #828282;
+        }
+      }
+    }
+  }
+}
